@@ -1,2 +1,2 @@
 # projetos_estacio
-aulas
+aula  Super Trunfo em c: Fundamentos e Técnicas Avançadas - novato
