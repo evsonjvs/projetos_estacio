@@ -32,6 +32,9 @@ int main() {
     printf("Digite o número de pontos turísticos: \n");
     scanf("%d", &numero_pontos_turisticos1);//recebendo o numero de pontos turisticos da cidade da carta 1, informando numeros inteiros
 
+    float densidade_populacional1 = populacao1 / area1; //calculando a densidade populacional da cidade da carta 1
+    float pib_per_capita1 = pib1 / populacao1; //calculando o pib per capita da cidade da carta 1
+
     printf("\nCARTA 2\n");
     printf("Digite o estado (uma letra): \n");
     scanf(" %c", &estado2); //recebendo o estado da carta 2 informando pelas letras A a H
@@ -48,6 +51,9 @@ int main() {
     printf("Digite o número de pontos turísticos: \n");
     scanf("%d", &numero_pontos_turisticos2);//recebendo o numero de pontos turisticos da cidade da carta 2, informando numeros inteiros
 
+    float densidade_populacional2 = populacao2 / area2; //calculando a densidade populacional da cidade da carta 2
+    float pib_per_capita2 = pib2 / populacao2; //calculando o pib per capita da cidade da carta 2
+
     //exibir os dados das cartas informadas
     //exibindo os dados da carta 1
     printf("----------------------\n");
@@ -59,8 +65,13 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f milhões\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", numero_pontos_turisticos1);
+    printf("Densidade Populacional: %.2f habitantes/km²\n", densidade_populacional1);
+    printf("PIB per Capita: %.2f milhões\n", pib_per_capita1);
+    
 
     printf("----------------------\n");
+
+
     //exibindo os dados da carta 2
     printf("CARTA 2\n");
     printf("Estado: %c\n", estado2);
@@ -70,8 +81,11 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f milhões\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", numero_pontos_turisticos2);
+    printf("Densidade Populacional: %.2f habitantes/km²\n", densidade_populacional2);
+    printf("PIB per Capita: %.2f milhões\n", pib_per_capita2);
 
     printf("----------------------\n");
+    printf("\n");
 
     return 0;
 }
